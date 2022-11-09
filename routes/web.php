@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\backend\AdminProfileController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -33,6 +35,7 @@ Route::middleware(['auth:sanctum,admin', config('jetstream.auth_session'), 'veri
 //Admin Related routes
 
 Route::get('admin/logout',[AdminController::class,'destroy'])->name('admin.logout');
+Route::get('admin/profile',[AdminProfileController::class,'AdminProfile'])->name('admin.Profile');
 
 
 
