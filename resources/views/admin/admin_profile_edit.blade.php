@@ -63,7 +63,7 @@
                       </div><!--col-md-6-->
 
                       <div class="col-md-6">
-                        <img id="showImage" src="{{(!empty($adminData->profile_photo_path))?url('upload/admin_images'.$adminData->profile_photo_path):url('upload/no_image.jpg')}}" style="width:100px; height:100px;">
+                        <img id="showImage" src="{{(!empty($adminData->profile_photo_path))?url('upload/admin_images/'.$adminData->profile_photo_path):url('upload/no_image.jpg')}}" style="width:100px; height:100px;">
                       </div><!--col-md-6-->
                     </div>
 
